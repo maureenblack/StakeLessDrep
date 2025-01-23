@@ -1,0 +1,142 @@
+{
+  "@context": {
+    "@language": "en-us",
+    "CIP100": "https://github.com/cardano-foundation/CIPs/blob/master/CIP-0100/README.md#",
+    "CIP119": "https://github.com/cardano-foundation/CIPs/blob/master/CIP-0119/README.md#",
+    "hashAlgorithm": "CIP100:hashAlgorithm",
+    "body": {
+      "@id": "CIP119:body",
+      "@context": {
+        "bio": "CIP119:bio",
+        "email": "CIP119:email",
+        "givenName": "CIP119:givenName",
+        "motivations": "CIP119:motivations",
+        "objectives": "CIP119:objectives",
+        "paymentAddress": "CIP119:paymentAddress",
+        "qualifications": "CIP119:qualifications",
+        "image": {
+          "@id": "CIP119:image",
+          "@context": {
+            "ImageObject": "https://schema.org/ImageObject"
+          }
+        },
+        "references": {
+          "@id": "CIP119:references",
+          "@container": "@set",
+          "@context": {
+            "GovernanceMetadata": "CIP100:GovernanceMetadataReference",
+            "Other": "CIP100:OtherReference",
+            "label": "CIP100:reference-label",
+            "uri": "CIP100:reference-uri",
+            "referenceHash": {
+              "@id": "CIP119:referenceHash",
+              "@context": {
+                "hashDigest": "CIP119:hashDigest",
+                "hashAlgorithm": "CIP100:hashAlgorithm"
+              }
+            }
+          }
+        }
+      }
+    },
+    "authors": {
+      "@id": "CIP100:authors",
+      "@container": "@set",
+      "@context": {
+        "name": "http://xmlns.com/foaf/0.1/name",
+        "witness": {
+          "@id": "CIP100:witness",
+          "@context": {
+            "witnessAlgorithm": "CIP100:witnessAlgorithm",
+            "publicKey": "CIP100:publicKey",
+            "signature": "CIP100:signature"
+          }
+        }
+      }
+    }
+  },
+  "authors": [
+    {
+      "witness": {
+        "publicKey": {
+          "@value": "a401010327200621582018af6e4c656eef4657834bac5b909fd90950117bc0b44164c5a97fe4149d33e3"
+        },
+        "signature": {
+          "@value": "845829a201276761646472657373581c957ff6477708440672253092e9682ad0c90c512d8cc0218729f922c3a166686173686564f4584456657269667920445265702064726570316a346c6c76336d6870707a7176753339787a66776a3670323672797363356664336e717a727065666c7933767833796133346158408d8266fc0f18d0af25bc51346d8b1b87427a47734482bcdf6fb07595a16c966fbd514cc83dc0e04f9ff3b0c21b16d422c7a928339af0bd8d612072b5bddbdc07"
+        },
+        "witnessAlgorithm": {
+          "@value": "Ed25519"
+        }
+      }
+    }
+  ],
+  "hashAlgorithm": {
+    "@value": "blake2b-256"
+  },
+  "body": {
+    "bio": {
+      "@value": " DRep with a mission. Making governance work for everyone, from anywhere 🌍✨"
+    },
+    "email": {
+      "@value": "maureen@giiyo.com"
+    },
+    "givenName": {
+      "@value": "StakeLess DRep"
+    },
+    "image": {
+      "@type": "ImageObject",
+      "contentUrl": "https://ipfs.io/ipfs/QmdkVkfgiF9w6yMyxNv2xhmGrBuKAB1BXHwEk1G7QcD7eo",
+      "sha256": "346dd4be415dfff3f553bc9df6274cd8caad013573ecc5ac8391df80bf7cd4fe"
+    },
+    "motivations": {
+      "@value": "I started my DRep journey with 39 ADA (yes, I counted every one), but this amazing community turned my empty wallet into a chance to serve. Now I'm here to make sure everyone gets governance, Because real decentralization is giving everyone a voice, no matter what language you speak or how thick your wallet is! "
+    },
+    "objectives": {
+      "@value": "I believe in a Cardano where everyone has a seat at the governance table. As your resident tech-translator (and recovering empty-wallet survivor 😉), I'm here to make sure your brilliant ideas don't get lost in technical mumbo-jumbo. From Africa to Asia and beyond, we're building bridges and making Cardano work for everyone. 🌍"
+    },
+    "paymentAddress": {
+      "@value": "addr1q8q25anxdp5hsmukxm99h7fh95rcuxed4ryk4jwzwhj7rpl8y7qqf0xuarfnjyljdqa2szayfdev9ytselvy47jh8aaq06gp78"
+    },
+    "qualifications": {
+      "@value": "I'm your Swiss Army knife of governance - a full-stack developer who reads smart contracts for fun, an educator who makes tech talks feel like story time, and a constitutional delegate with a Public Administration degree (fancy way of saying I know how to make rules that actually work! 😉). I bridge worlds: from code to conversation, from Africa to anywhere, from \"what's possible\" to \"here's how we do it.\""
+    },
+    "references": [
+      {
+        "@type": "Other",
+        "label": {
+          "@value": "LinkedIn"
+        },
+        "uri": {
+          "@value": "https://www.linkedin.com/in/wepngongmaureen/"
+        }
+      },
+      {
+        "@type": "Other",
+        "label": {
+          "@value": "Twitter"
+        },
+        "uri": {
+          "@value": "https://x.com/WepngongMaureen"
+        }
+      },
+      {
+        "@type": "Other",
+        "label": {
+          "@value": "Github"
+        },
+        "uri": {
+          "@value": "https://github.com/maureenblack"
+        }
+      },
+      {
+        "@type": "Other",
+        "label": {
+          "@value": "Facebook"
+        },
+        "uri": {
+          "@value": "https://web.facebook.com/wepngong.maureen.wepnyu/"
+        }
+      }
+    ]
+  }
+}
