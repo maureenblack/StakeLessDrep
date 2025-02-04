@@ -54,10 +54,10 @@
   "hashAlgorithm": "blake2b-256",
   "body": {
     "givenName": "StakeLess DRep",
-    "motivations": "I started my DRep journey with 39 ADA (yes, I counted every one), but this amazing community turned my empty wallet into a chance to serve. Now I'm here to make sure everyone gets governance, Because real decentralization is giving everyone a voice, no matter what language you speak or how thick your wallet is! ",
-    "objectives": "I believe in a Cardano where everyone has a seat at the governance table. As your resident tech-translator (and recovering empty-wallet survivor 😉), I'm here to make sure your brilliant ideas don't get lost in technical mumbo-jumbo. From Africa to Asia and beyond, we're building bridges and making Cardano work for everyone. 🌍",
+    "motivations": "I started this journey with 39 ADA and a dream of making governance work for everyone. Being a DRep isn't about having the biggest wallet; it's about having the biggest heart for the community. And I do. So why am I a DRep? Because I love Cardano.",
+    "objectives": "My Top 3 Objectives.\n1.  Building Bridges. I'm a bridge between communities that rarely talk. My mission is to be the voice for those who've been told they're too small, too far, too different to make a difference.  From Africa to Japan and everywhere in between, good ideas know no borders. \n2.  Community Education. I'll push for dashboards, translation resources, and educational platforms that make governance accessible to everyone, not just tech experts.\n3.  Push for Better. \nIf something doesn't make sense, I'll call it out. I am not here to make everyone \"comfortable\". Comfort isn't the same as correct and Cardano deserves the best.\n\nThis isn't your typical DRep pitch because I'm not your typical DRep.  I'm here to rewrite the rules.",
     "paymentAddress": "addr1q8q25anxdp5hsmukxm99h7fh95rcuxed4ryk4jwzwhj7rpl8y7qqf0xuarfnjyljdqa2szayfdev9ytselvy47jh8aaq06gp78",
-    "qualifications": "I'm your Swiss Army knife of governance - a full-stack developer who reads smart contracts for fun, an educator who makes tech talks feel like story time, and a constitutional delegate with a Public Administration degree (fancy way of saying I know how to make rules that actually work! 😉). I bridge worlds: from code to conversation, from Africa to anywhere, from \"what's possible\" to \"here's how we do it.\"",
+    "qualifications": "-Fullstack Developer | MERN Stack \n-Constitutional Delegate, Cameroon | Douala Workshop 2024\n-Public Administration Degree\nI'm not here to impress you with a fancy resume, but i believe my most profound credential is an almost embarrassingly passionate obsession with the Cardano ecosystem. ",
     "references": [
       {
         "@type": "Link",
