@@ -62,6 +62,36 @@ body {
     margin-top: 0.25rem;
 }
 
+/* Hero Section Styles */
+.hero-section {
+    text-align: center;
+    padding: 60px 0;
+    color: white;
+}
+
+/* Statistics Section Styles */
+.statistics {
+    background-color: #f8f9fa;
+    padding: 40px 0;
+}
+
+.statistic {
+    padding: 20px;
+    border: 1px solid #dee2e6;
+    border-radius: 10px;
+    margin: 10px;
+    transition: transform 0.3s;
+}
+
+.statistic:hover {
+    transform: scale(1.05);
+}
+
+.count {
+    font-size: 2.5em;
+    font-weight: bold;
+}
+
 /* Profile Card */
 .profile-card {
     background: white;
@@ -749,6 +779,37 @@ body {
     }
 }
 
+@media (max-width: 768px) {
+    .manifesto-container {
+        padding: 20px;
+        font-size: 1em;
+        background-color: #f0f0f0;
+        border-radius: 10px;
+        box-shadow: none;
+    }
+    .btn-secondary {
+        width: 100%;
+        padding: 12px;
+        font-size: 1.1em;
+        background-color: #007bff;
+        color: white;
+        border: none;
+        border-radius: 5px;
+    }
+    h1 {
+        font-size: 2em;
+        margin-bottom: 20px;
+    }
+    h2 {
+        font-size: 1.8em;
+        margin-bottom: 15px;
+    }
+    p {
+        margin-bottom: 15px;
+        line-height: 1.5;
+    }
+}
+
 /* Vote Actions */
 .vote-actions {
     display: flex;
@@ -802,4 +863,63 @@ body {
     font-size: 1.1em;
     line-height: 1.6;
     margin: 0;
+}
+
+/* Featured Initiatives Section Styles */
+.featured-initiatives {
+    background-color: #ffffff;
+    padding: 40px 0;
+}
+
+.initiative-card {
+    border: 1px solid #dee2e6;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 10px;
+    transition: transform 0.3s;
+    background-color: #f0f0f0; /* Use a light color from the logo */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.initiative-card:nth-child(odd) {
+    background-color: #e0f7fa; /* Use a color from the logo */
+}
+
+.initiative-card:nth-child(even) {
+    background-color: #fce4ec; /* Use a color from the logo */
+}
+
+.initiative-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.initiative-card img {
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+/* Manifesto Section Styles */
+.manifesto {
+    background-color: #e0f7fa; /* Use a color from the logo */
+    padding: 40px 0;
+}
+
+.manifesto h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.manifesto p {
+    text-align: center;
+    font-size: 1.1em;
+    margin-bottom: 10px;
+}
+
+.manifesto-container {
+    width: 100%;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
