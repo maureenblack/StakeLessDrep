@@ -95,6 +95,19 @@ function handleResourceSearch(event) {
     });
 }
 
+// Copy DRep ID functionality
+function copyDrepId() {
+    const drepId = 'drep1j4llv3mhppzqvu39xzfwj6p26rysc5fd3nqzrpefly3vx3ya34a';
+    navigator.clipboard.writeText(drepId).then(() => {
+        const button = document.querySelector('.cta-section button');
+        const originalText = button.innerHTML;
+        button.innerHTML = '<i class="fas fa-check me-2"></i>Copied!';
+        setTimeout(() => {
+            button.innerHTML = originalText;
+        }, 2000);
+    });
+}
+
 // Initialize
 document.addEventListener('DOMContentLoaded', () => {
     // Load blog posts if we're on the blog page
@@ -107,5 +120,11 @@ document.addEventListener('DOMContentLoaded', () => {
     const searchInput = document.getElementById('resourceSearch');
     if (searchInput) {
         searchInput.addEventListener('input', handleResourceSearch);
+    }
+
+    // Add copy DRep ID functionality
+    const copyButton = document.querySelector('.cta-section button');
+    if (copyButton) {
+        copyButton.addEventListener('click', copyDrepId);
     }
 });
