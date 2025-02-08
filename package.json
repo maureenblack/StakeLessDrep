@@ -1,12 +1,17 @@
 {
   "name": "stakelessdrep",
   "version": "1.0.0",
-  "description": "",
+  "description": "StakelessDRep - Making Governance Work for Everyone",
   "main": "index.js",
   "scripts": {
+    "sass": "sass src/assets/styles/scss/main.scss src/assets/styles/main.css --watch",
+    "build:sass": "sass src/assets/styles/scss/main.scss src/assets/styles/main.css --style compressed",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": [],
+  "keywords": ["cardano", "governance", "drep"],
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "sass": "^1.69.5"
+  }
 }
