@@ -1,13 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <!-- Meta tags -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>StakelessDRep | Making Governance Work for Everyone</title>
-
+    
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <!-- Bootstrap Icons -->
@@ -17,19 +14,15 @@
     <!-- Google Fonts - Montserrat -->
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
     <!-- Custom CSS -->
-    <link href="https://cdn.jsdelivr.net/gh/maureenblack/StakeLessDrep@main/src/assets/styles/main.css"
-        rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/gh/maureenblack/StakeLessDrep@main/src/assets/styles/logo.css"
-        rel="stylesheet">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>StakelessDRep | Making Governance Work for Everyone</title>
+    <link href="src/assets/styles/main.css" rel="stylesheet">
+    <link href="src/assets/styles/logo.css" rel="stylesheet">
+    <link rel="icon" type="image/png" href="src/assets/images/drep-favicon.png">
 </head>
-
 <body>
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
         <div class="container">
-            <a class="navbar-brand d-flex align-items-center" href="#">
+            <a class="navbar-brand d-flex align-items-center" href="/">
                 <div class="logo">
                     <div class="logo-bridge"></div>
                     <div class="logo-circle logo-circle-left"></div>
@@ -46,16 +39,16 @@
                         <a class="nav-link active" href="index.html">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="src/pages/about.html">About</a>
+                        <a class="nav-link" href="about.html">About</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="src/pages/votes.html">Votes</a>
+                        <a class="nav-link" href="votes.html">Votes</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="src/pages/resources.html">Resources</a>
+                        <a class="nav-link" href="resources.html">Resources</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="src/pages/blog.html">Blog</a>
+                        <a class="nav-link" href="blog.html">Blog</a>
                     </li>
                 </ul>
             </div>
@@ -63,57 +56,88 @@
     </nav>
 
     <!-- Hero Section -->
-    <header class="hero-section"
-        style="background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7)), url('src/assets/images/hero-background.jpg');">
+    <header class="hero bg-primary text-white py-5">
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-12 col-md-10 col-lg-8 text-center">
-                    <h1 class="display-4 mb-4">Empowering Governance in Cardano</h1>
-                    <p class="lead mb-4">Join us in building a decentralized future for everyone. We're making Cardano
-                        governance accessible, transparent, and effective.</p>
-                    <div class="d-flex justify-content-center gap-3">
-                        <a href="#about" class="btn btn-primary btn-lg">Learn More</a>
-                        <a href="src/pages/votes.html" class="btn btn-outline-light btn-lg">View Votes</a>
+                    <h1 class="display-4 mb-4">Every ADA holder matters</h1>
+                    <p class="lead mb-4">Governance is for everyone, not just the loudest voices, the biggest ADA bags, or the ones who understand every Catalyst proposal on the first read.</p>
+                    <div class="d-flex flex-column flex-md-row justify-content-center gap-3">
+                        <a href="#latest-votes" class="btn btn-light btn-lg mb-2 mb-md-0">View Latest Votes</a>
+                        <button onclick="showDelegationModal()" class="btn btn-outline-light btn-lg">Delegate to Me</button>
                     </div>
                 </div>
             </div>
         </div>
     </header>
 
+    <!-- Journey Section -->
+    <section class="journey-section py-5">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <h2 class="mb-4">From 39 ADA to DRep</h2>
+                    <p class="lead">I started this journey with <strong>39 ADA, zero stake, and a dream</strong>—to make Cardano governance accessible for the underdogs.</p>
+                    <div class="journey-steps">
+                        <div class="step mb-3">
+                            <i class="fas fa-rocket text-primary"></i>
+                            <span>Deciding to become a DRep (with no stake)</span>
+                        </div>
+                        <div class="step mb-3">
+                            <i class="fas fa-face-palm text-primary"></i>
+                            <span>Finding out I needed 500 ADA to register</span>
+                        </div>
+                        <div class="step mb-3">
+                            <i class="fas fa-hands-helping text-primary"></i>
+                            <span>Community support helped reach 734 ADA!</span>
+                        </div>
+                        <div class="step mb-3">
+                            <i class="fas fa-fire text-primary"></i>
+                            <span>Becoming the DRep for the stakeless</span>
+                        </div>
+                    </div>
+                    <a href="about.html" class="btn btn-primary mt-3">Read My Full Story</a>
+                </div>
+                <div class="col-md-6">
+                    <div class="manifesto-box p-4 bg-light rounded">
+                        <h3 class="mb-3">The Stakeless Manifesto</h3>
+                        <ul class="list-unstyled">
+                            <li class="mb-2"><i class="fas fa-check text-success me-2"></i>Understandable – No more governance jargon walls</li>
+                            <li class="mb-2"><i class="fas fa-check text-success me-2"></i>Accessible – Decision-making open to all</li>
+                            <li class="mb-2"><i class="fas fa-check text-success me-2"></i>Fun – If it feels like homework, people won't do it</li>
+                            <li class="mb-2"><i class="fas fa-check text-success me-2"></i>Safe – No one should feel dumb for asking questions</li>
+                        </ul>
+                        <p class="mt-3 mb-0 text-muted">We move Tomo ni mae e (forward together)</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- Latest Votes Section -->
     <section id="latest-votes" class="py-5">
         <div class="container">
-            <h2 class="text-center mb-5">Latest Votes</h2>
-            <div class="row justify-content-center">
-                <div class="col-12 col-lg-8">
-                    <div class="card mb-4">
-                        <div class="card-body p-4">
-                            <h5 class="card-title h4 mb-3">Cardano Constitution</h5>
-                            <div class="vote-info">
-                                <span class="vote-badge vote-yes">Voted: Yes</span>
-                                <span class="vote-date">February 2025</span>
-                            </div>
-                            <div class="vote-content">
-                                <p class="lead">"Perfect shouldn't be the enemy of progress. The constitution provides a
-                                    framework that can evolve with our community."</p>
-                                <div class="vote-highlights">
-                                    <div class="highlight-item">
-                                        <i class="fas fa-check-circle"></i>
-                                        <span>Built-in amendment process</span>
+            <h2 class="text-center mb-4">Latest Votes</h2>
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="vote-card">
+                        <div class="card">
+                            <div class="card-body">
+                                <div class="d-flex justify-content-between align-items-start mb-3">
+                                    <div>
+                                        <h3>Cardano Constitution Vote</h3>
+                                        <div class="vote-meta">
+                                            <span class="vote-date">February 8, 2025</span>
+                                            <span class="vote-type ms-3">Governance</span>
+                                        </div>
                                     </div>
-                                    <div class="highlight-item">
-                                        <i class="fas fa-check-circle"></i>
-                                        <span>Community-driven evolution</span>
-                                    </div>
-                                    <div class="highlight-item">
-                                        <i class="fas fa-check-circle"></i>
-                                        <span>Global representation</span>
+                                    <div class="vote-badge">
+                                        <span class="badge bg-success">Voted YES</span>
                                     </div>
                                 </div>
                                 <div class="vote-actions">
-                                    <a href="src/pages/votes.html" class="btn btn-primary">Read Full Rationale</a>
-                                    <a href="src/assets/documents/cardano-constitution-rationale.html"
-                                        class="btn btn-outline-secondary ms-2">View Document</a>
+                                    <a href="votes.html" class="btn btn-primary">Read Full Rationale</a>
+                                    <a href="src/assets/documents/cardano-constitution-rationale.html" class="btn btn-outline-secondary ms-2">View Document</a>
                                 </div>
                             </div>
                         </div>
@@ -123,43 +147,148 @@
         </div>
     </section>
 
-    <!-- Footer -->
-    <footer class="bg-light py-5">
+    <!-- Why Choose Section -->
+    <section class="why-choose-us py-5 bg-light">
         <div class="container">
+            <h2 class="text-center mb-5">Making Governance Accessible</h2>
             <div class="row">
-                <div class="col-md-4">
-                    <h5>About StakelessDRep</h5>
-                    <p>Making Cardano governance accessible to everyone through transparent and responsible delegation.
-                    </p>
+                <div class="col-md-4 mb-4">
+                    <div class="feature-card text-center">
+                        <i class="fas fa-users fa-3x mb-3 text-primary"></i>
+                        <h3>Community First</h3>
+                        <p>Every voice matters, whether you have 1 ADA or 1 million. We're building a governance space where everyone belongs.</p>
+                    </div>
                 </div>
-                <div class="col-md-4">
-                    <h5>Quick Links</h5>
-                    <ul class="list-unstyled">
-                        <li><a href="src/pages/about.html">About Us</a></li>
-                        <li><a href="src/pages/votes.html">Voting History</a></li>
-                        <li><a href="src/pages/resources.html">Resources</a></li>
-                        <li><a href="src/pages/blog.html">Blog</a></li>
-                    </ul>
+                <div class="col-md-4 mb-4">
+                    <div class="feature-card text-center">
+                        <i class="fas fa-book-open fa-3x mb-3 text-primary"></i>
+                        <h3>Simple Language</h3>
+                        <p>Breaking down complex governance topics into understandable pieces. No jargon walls, just clear communication.</p>
+                    </div>
                 </div>
-                <div class="col-md-4">
-                    <h5>Connect With Us</h5>
-                    <div class="social-links">
-                        <a href="#" class="me-3"><i class="fab fa-twitter"></i></a>
-                        <a href="#" class="me-3"><i class="fab fa-github"></i></a>
-                        <a href="#" class="me-3"><i class="fab fa-discord"></i></a>
+                <div class="col-md-4 mb-4">
+                    <div class="feature-card text-center">
+                        <i class="fas fa-handshake fa-3x mb-3 text-primary"></i>
+                        <h3>True Representation</h3>
+                        <p>Representing the stakeless, the newcomers, and everyone who feels left out of governance discussions.</p>
                     </div>
                 </div>
             </div>
-            <div class="row mt-4">
-                <div class="col-12 text-center">
-                    <p class="mb-0">&copy; 2025 StakelessDRep. All rights reserved.</p>
+        </div>
+    </section>
+
+    <!-- Latest Blog Posts -->
+    <section class="latest-posts py-5">
+        <div class="container">
+            <h2 class="text-center mb-5">Latest Updates</h2>
+            <div class="row">
+                <div class="col-md-6 mb-4">
+                    <div class="card h-100">
+                        <img src="src/assets/images/cardano-governance.jpg" class="card-img-top" alt="Cardano Governance">
+                        <div class="card-body">
+                            <h5 class="card-title">Understanding Cardano's Governance Model</h5>
+                            <p class="card-text">An in-depth look at how Cardano's governance model works and why it matters.</p>
+                            <a href="blog.html" class="btn btn-primary">Read More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 mb-4">
+                    <div class="card h-100">
+                        <img src="src/assets/images/drep-role.jpg" class="card-img-top" alt="DRep Role">
+                        <div class="card-body">
+                            <h5 class="card-title">The Role of DReps in Cardano</h5>
+                            <p class="card-text">Exploring how Delegation Representatives contribute to Cardano's governance.</p>
+                            <a href="blog.html" class="btn btn-primary">Read More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action -->
+    <section class="cta py-5 bg-primary text-white">
+        <div class="container text-center">
+            <h2 class="mb-4">Ready to Make Your Voice Heard?</h2>
+            <p class="lead mb-4">Join me in making Cardano governance accessible for everyone. Because your voice matters, no matter how many ADA you hold.</p>
+            <div class="d-flex justify-content-center gap-3">
+                <a href="about.html" class="btn btn-light btn-lg">Join the Movement</a>
+                <a href="votes.html" class="btn btn-outline-light btn-lg">See My Voting Record</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Delegation Modal -->
+    <div class="modal fade" id="delegationModal" tabindex="-1" aria-labelledby="delegationModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header bg-primary text-white">
+                    <h5 class="modal-title" id="delegationModalLabel">Delegate Your Voting Power</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p class="mb-3">Ready to make your voice count? Use my DRep ID to delegate:</p>
+                    <div class="input-group mb-3">
+                        <input type="text" class="form-control" value="drep1j4llv3mhppzqvu39xzfwj6p26rysc5fd3nqzrpefly3vx3ya34a" id="drepId" readonly>
+                        <button class="btn btn-primary" onclick="copyDrepId()">
+                            <i class="fas fa-copy"></i> Copy
+                        </button>
+                    </div>
+                    <div class="alert alert-success d-none" id="copySuccess">DRep ID copied to clipboard!</div>
+                    <hr>
+                    <h6 class="mb-3">How to Delegate:</h6>
+                    <ol class="mb-4">
+                        <li class="mb-2">Open your Cardano wallet</li>
+                        <li class="mb-2">Navigate to the delegation section</li>
+                        <li class="mb-2">Paste my DRep ID</li>
+                        <li class="mb-2">Confirm the delegation</li>
+                    </ol>
+                    <p class="mb-0"><small>Need help? Check out my <a href="blog/how-to-delegate.html">detailed delegation guide</a>.</small></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Floating Delegation Button (Mobile) -->
+    <div class="d-block d-md-none">
+        <button onclick="showDelegationModal()" class="btn btn-primary rounded-circle shadow-lg position-fixed" style="bottom: 20px; right: 20px; width: 60px; height: 60px; z-index: 1000;">
+            <i class="fas fa-vote-yea"></i>
+        </button>
+    </div>
+    <footer class="footer bg-light py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <span class="logo-text">StakelessDRep</span>
+                    <p>DRep ID: drep1j4llv3mhppzqvu39xzfwj6p26rysc5fd3nqzrpefly3vx3ya34a</p>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <a href="https://x.com/WepngongMaureen" class="social-link">Twitter</a>
+                    <a href="https://www.linkedin.com/in/wepngongmaureen/" class="social-link">LinkedIn</a>
+                    <a href="https://github.com/maureenblack" class="social-link">GitHub</a>
                 </div>
             </div>
         </div>
     </footer>
-
     <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script>
+    function showDelegationModal() {
+        var delegationModal = new bootstrap.Modal(document.getElementById('delegationModal'));
+        delegationModal.show();
+    }
+
+    function copyDrepId() {
+        var drepId = document.getElementById('drepId');
+        navigator.clipboard.writeText(drepId.value);
+        var successAlert = document.getElementById('copySuccess');
+        successAlert.classList.remove('d-none');
+        setTimeout(() => {
+            successAlert.classList.add('d-none');
+        }, 3000);
+    }
+    </script>
 </body>
 
 </html>

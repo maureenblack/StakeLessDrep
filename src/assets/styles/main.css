@@ -633,6 +633,138 @@ body {
 }
 
 /* Resources Page Styles */
+.resources-section .card {
+    border: none;
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.resources-section .card:hover {
+    transform: translateY(-5px);
+}
+
+.resources-section .card-title {
+    color: #0033AD;
+    font-weight: 600;
+    margin-bottom: 1.5rem;
+}
+
+.resources-section .text-primary {
+    color: #0033AD !important;
+}
+
+.resources-section .btn-outline-primary {
+    color: #0033AD;
+    border-color: #0033AD;
+}
+
+.resources-section .btn-outline-primary:hover {
+    background-color: #0033AD;
+    color: white;
+}
+
+.resources-section .list-unstyled a {
+    color: #333;
+    transition: color 0.3s ease;
+}
+
+.resources-section .list-unstyled a:hover {
+    color: #0033AD;
+    text-decoration: none;
+}
+
+.doc-item h4 {
+    color: #0033AD;
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+}
+
+.accordion-button:not(.collapsed) {
+    background-color: #0033AD;
+    color: white;
+}
+
+.accordion-button:focus {
+    border-color: #0033AD;
+    box-shadow: 0 0 0 0.25rem rgba(0, 51, 173, 0.25);
+}
+
+/* Blog Page Styles */
+.blog-section .card {
+    border: none;
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.blog-section .card:hover {
+    transform: translateY(-5px);
+}
+
+.blog-section .card-title {
+    color: #0033AD;
+    font-weight: 600;
+}
+
+.blog-section .btn-primary {
+    background-color: #0033AD;
+    border-color: #0033AD;
+}
+
+.blog-section .btn-primary:hover {
+    background-color: #002580;
+    border-color: #002580;
+}
+
+/* Homepage Enhancements */
+.feature-card {
+    padding: 2rem;
+    border-radius: 10px;
+    background: white;
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.feature-card:hover {
+    transform: translateY(-5px);
+}
+
+.feature-card h3 {
+    color: #0033AD;
+    margin: 1rem 0;
+}
+
+.cta {
+    background: linear-gradient(45deg, #0033AD, #FF5733);
+}
+
+.latest-posts .card-img-top {
+    height: 200px;
+    object-fit: cover;
+}
+
+/* Social Links */
+.social-link {
+    color: #0033AD;
+    margin: 0 10px;
+    font-size: 1.2rem;
+    transition: color 0.3s ease;
+}
+
+.social-link:hover {
+    color: #FF5733;
+}
+
+/* Footer Enhancement */
+.footer {
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.footer .logo-text {
+    color: #0033AD;
+    font-weight: 600;
+}
+
+/* Search Box */
 .search-box {
     margin-bottom: 30px;
 }
@@ -870,6 +1002,144 @@ body {
     }
 }
 
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+    .navbar-brand {
+        font-size: 1.2rem;
+    }
+
+    .navbar-toggler {
+        padding: 0.4rem;
+    }
+
+    .display-4 {
+        font-size: 2rem;
+    }
+
+    .lead {
+        font-size: 1rem;
+    }
+
+    .btn-lg {
+        padding: 0.5rem 1rem;
+        font-size: 1rem;
+    }
+
+    .journey-section .row {
+        margin: 0;
+    }
+
+    .feature-card {
+        margin: 0.5rem;
+        padding: 1rem;
+    }
+
+    .manifesto-box {
+        margin: 1rem 0;
+    }
+
+    .social-link {
+        margin: 0 5px;
+        font-size: 1rem;
+    }
+
+    .footer {
+        text-align: center;
+    }
+
+    .footer .text-md-end {
+        text-align: center !important;
+        margin-top: 1rem;
+    }
+
+    .hero {
+        padding: 2rem 0 !important;
+    }
+
+    .resources-section .card {
+        margin-bottom: 1rem;
+    }
+
+    .blog-section .card {
+        margin-bottom: 1rem;
+    }
+
+    /* Fix spacing issues */
+    .container {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .row {
+        margin-left: -10px;
+        margin-right: -10px;
+    }
+
+    .col-md-4, .col-md-6 {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+}
+
+/* Delegation CTA */
+.delegation-cta {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 1000;
+    background: linear-gradient(45deg, #0033AD, #FF5733);
+    color: white;
+    padding: 1rem;
+    border-radius: 10px;
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.2);
+    max-width: 300px;
+}
+
+@media (max-width: 768px) {
+    .delegation-cta {
+        bottom: 0;
+        right: 0;
+        left: 0;
+        border-radius: 10px 10px 0 0;
+        max-width: 100%;
+        text-align: center;
+    }
+}
+
+.delegation-cta .close-btn {
+    position: absolute;
+    top: 5px;
+    right: 10px;
+    color: white;
+    cursor: pointer;
+    opacity: 0.8;
+}
+
+.delegation-cta .close-btn:hover {
+    opacity: 1;
+}
+
+/* Fix card heights on mobile */
+@media (max-width: 768px) {
+    .card.h-100 {
+        height: auto !important;
+        margin-bottom: 1rem;
+    }
+}
+
+/* Improve button spacing on mobile */
+@media (max-width: 768px) {
+    .d-flex.justify-content-center.gap-3 {
+        flex-direction: column;
+        gap: 0.5rem !important;
+    }
+
+    .btn {
+        width: 100%;
+        margin-bottom: 0.5rem;
+    }
+}
+
 /* Vote Actions */
 .vote-actions {
     display: flex;
@@ -1009,4 +1279,128 @@ footer h5 {
 
 .social-links a:hover {
     color: var(--secondary-color);
+}
+
+/* Additional Mobile Improvements */
+@media (max-width: 768px) {
+    /* Better text readability */
+    body {
+        font-size: 16px;
+        line-height: 1.6;
+    }
+
+    /* Improved spacing */
+    section {
+        padding: 2rem 0;
+    }
+
+    /* Card improvements */
+    .card {
+        margin-bottom: 1rem;
+        border-radius: 10px;
+    }
+
+    .card-body {
+        padding: 1rem;
+    }
+
+    /* Modal improvements */
+    .modal-dialog {
+        margin: 0.5rem;
+    }
+
+    .modal-content {
+        border-radius: 15px;
+    }
+
+    .input-group {
+        flex-direction: column;
+    }
+
+    .input-group > * {
+        border-radius: 5px !important;
+        margin-bottom: 0.5rem;
+    }
+
+    .input-group .btn {
+        width: 100%;
+    }
+
+    /* Navigation improvements */
+    .navbar {
+        padding: 0.5rem 1rem;
+    }
+
+    .navbar-collapse {
+        background: white;
+        padding: 1rem;
+        border-radius: 10px;
+        box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
+        margin-top: 0.5rem;
+    }
+
+    .navbar-nav .nav-link {
+        padding: 0.5rem 1rem;
+        border-radius: 5px;
+    }
+
+    .navbar-nav .nav-link:hover {
+        background: #f8f9fa;
+    }
+
+    /* Timeline improvements */
+    .journey-steps .step {
+        padding: 1rem;
+        background: #f8f9fa;
+        border-radius: 10px;
+        margin-bottom: 1rem;
+    }
+
+    /* Footer improvements */
+    .footer {
+        padding: 2rem 1rem;
+    }
+
+    .social-link {
+        display: inline-block;
+        padding: 0.5rem;
+    }
+
+    /* Accordion improvements */
+    .accordion-button {
+        padding: 1rem;
+    }
+
+    .accordion-body {
+        padding: 1rem;
+    }
+
+    /* Fix horizontal scrolling */
+    .container {
+        max-width: 100%;
+        overflow-x: hidden;
+    }
+
+    /* Make text more readable on small screens */
+    .lead {
+        font-size: 1.1rem;
+        line-height: 1.6;
+    }
+
+    h1, h2, h3, h4, h5, h6 {
+        word-wrap: break-word;
+    }
+
+    /* Improve form elements */
+    input, select, textarea {
+        font-size: 16px !important; /* Prevents iOS zoom */
+    }
+
+    /* Better button touch targets */
+    .btn {
+        min-height: 44px;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+    }
 }
