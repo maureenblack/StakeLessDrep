@@ -15,7 +15,7 @@
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
         <div class="container">
-            <a class="navbar-brand d-flex align-items-center" href="index.html">
+            <a class="navbar-brand d-flex align-items-center" href="/">
                 <div class="logo">
                     <div class="logo-bridge"></div>
                     <div class="logo-circle logo-circle-left"></div>
@@ -29,7 +29,7 @@
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item">
-                        <a class="nav-link" href="index.html">Home</a>
+                        <a class="nav-link active" href="index.html">Home</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="about.html">About</a>
@@ -38,7 +38,7 @@
                         <a class="nav-link" href="votes.html">Votes</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active" href="resources.html">Resources</a>
+                        <a class="nav-link" href="resources.html">Resources</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="blog.html">Blog</a>
@@ -47,7 +47,6 @@
             </div>
         </div>
     </nav>
-
     <!-- Resources Content -->
     <section class="hero bg-primary text-white py-5">
         <div class="container">
@@ -93,11 +92,136 @@
                     <div class="col-md-4 mb-4">
                         <div class="card h-100">
                             <div class="card-body">
-                                <h3 class="card-title">Community Guidelines</h3>
-                                <p class="card-text">How to participate effectively in governance discussions.</p>
-                                <ul class="list-unstyled">
-                                    <li><a href="blog/community-guidelines.html"><i class="fas fa-arrow-right me-2"></i>Making Your Voice Heard</a></li>
-                                    <li><a href="blog/security-practices.html"><i class="fas fa-arrow-right me-2"></i>Security Best Practices</a></li>
+                                <h3 class="card-title">How to Delegate</h3>
+                                <p class="card-text">Learn how to delegate your ADA to a DRep and participate in governance.</p>
+                                <div class="wallet-section mt-3">
+                                    <h4 class="h6">Supported Wallets:</h4>
+                                    <ul class="list-unstyled">
+                                        <li><a href="https://yoroi-wallet.com/"><i class="fas fa-wallet me-2"></i>Yoroi Wallet</a></li>
+                                        <li><a href="https://daedaluswallet.io/"><i class="fas fa-wallet me-2"></i>Daedalus Wallet</a></li>
+                                        <li><a href="https://namiwallet.io/"><i class="fas fa-wallet me-2"></i>Nami Wallet</a></li>
+                                        <li><a href="https://vespr.xyz/"><i class="fas fa-wallet me-2"></i>Vespr Wallet</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Delegation Guide Section -->
+            <div class="mb-5">
+                <h2 class="mb-4">How to Delegate to a DRep</h2>
+                <div class="card">
+                    <div class="card-body">
+                        <p class="lead">Delegating your ADA to a Delegated Representative (DRep) is a crucial step in participating in Cardano's governance. Here's how to do it:</p>
+                        
+                        <h3 class="mt-4">Before You Start</h3>
+                        <div class="alert alert-info">
+                            <i class="fas fa-info-circle"></i>
+                            <strong>You'll need:</strong>
+                            <ul class="mb-0">
+                                <li>A supported Cardano wallet</li>
+                                <li>Some ADA in your wallet</li>
+                                <li>A few minutes to complete the process</li>
+                            </ul>
+                        </div>
+
+                        <h3 class="mt-4">Step 1: Choose a Wallet</h3>
+                        <p>You'll need a Cardano wallet that supports delegation. Here are your options:</p>
+                        <div class="row mb-4">
+                            <div class="col-md-3">
+                                <div class="card h-100">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Yoroi Wallet</h5>
+                                        <p class="card-text">A light wallet perfect for beginners</p>
+                                        <a href="https://yoroi-wallet.com/" class="btn btn-outline-primary">Download</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="card h-100">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Daedalus Wallet</h5>
+                                        <p class="card-text">A full node wallet for advanced users</p>
+                                        <a href="https://daedaluswallet.io/" class="btn btn-outline-primary">Download</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="card h-100">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Nami Wallet</h5>
+                                        <p class="card-text">A browser extension wallet</p>
+                                        <a href="https://namiwallet.io/" class="btn btn-outline-primary">Download</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="card h-100">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Vespr Wallet</h5>
+                                        <p class="card-text">A modern, feature-rich wallet</p>
+                                        <a href="https://vespr.xyz/" class="btn btn-outline-primary">Download</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <h3>Step 2: Fund Your Wallet</h3>
+                        <p>Before delegating, ensure your wallet has some ADA. You can transfer ADA from an exchange or another wallet. The delegation process requires a small fee for the transaction.</p>
+
+                        <h3>Step 3: Find a DRep</h3>
+                        <p>Research and choose a DRep you trust. Consider:</p>
+                        <ul>
+                            <li>Their voting history and philosophy</li>
+                            <li>Community engagement and transparency</li>
+                            <li>Technical knowledge and experience</li>
+                            <li>Communication style and accessibility</li>
+                        </ul>
+
+                        <div class="alert alert-success my-4">
+                            <i class="fas fa-lightbulb"></i>
+                            <strong>Pro Tip:</strong> Look for DReps who regularly share their voting rationale and engage with the community.
+                        </div>
+
+                        <h3>Step 4: Delegate Your ADA</h3>
+                        <p>The delegation process varies slightly depending on your wallet, but generally follows these steps:</p>
+                        <ol>
+                            <li>Open your Cardano wallet</li>
+                            <li>Navigate to the delegation or staking section</li>
+                            <li>Search for the DRep by name or ID</li>
+                            <li>Select the DRep and confirm the delegation</li>
+                            <li>Review and submit the transaction</li>
+                        </ol>
+
+                        <div class="alert alert-warning">
+                            <i class="fas fa-exclamation-triangle"></i>
+                            <strong>Important Notes:</strong>
+                            <ul class="mb-0">
+                                <li>Your ADA remains in your wallet and under your control</li>
+                                <li>You can change your delegation at any time</li>
+                                <li>Delegating to a DRep doesn't affect your staking rewards</li>
+                            </ul>
+                        </div>
+
+                        <h3>After Delegation</h3>
+                        <p>Once you've delegated:</p>
+                        <ul>
+                            <li>Monitor your DRep's voting activities</li>
+                            <li>Engage in community discussions</li>
+                            <li>Stay informed about governance proposals</li>
+                            <li>Provide feedback to your DRep</li>
+                        </ul>
+
+                        <div class="card bg-light my-4">
+                            <div class="card-body">
+                                <h4 class="card-title">Need Help?</h4>
+                                <p class="card-text">If you have questions or need assistance with delegation, feel free to reach out:</p>
+                                <ul class="list-unstyled mb-0">
+                                    <li><i class="fab fa-twitter"></i> Twitter: @StakeLessDRep</li>
+                                    <li><i class="fab fa-discord"></i> Discord: StakeLess Community</li>
+                                    <li><i class="fas fa-envelope"></i> Email: support@stakeless.io</li>
                                 </ul>
                             </div>
                         </div>
@@ -199,7 +323,7 @@
                         </h2>
                         <div id="faq4" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
                             <div class="accordion-body">
-                                Yes, you can change your vote until the voting period ends. However, it's important to research and think carefully before voting to maintain consistency and trust with your delegators.
+                                Yes, you can change your vote until the voting period ends. However, it's essential to research and think carefully before voting to maintain consistency and trust with your delegators.
                             </div>
                         </div>
                     </div>
