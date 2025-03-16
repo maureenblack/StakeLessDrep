@@ -1,0 +1,27 @@
+{
+  "@context": {
+    "CIP100": "https://github.com/cardano-foundation/CIPs/blob/master/CIP-0100/README.md#",
+    "hashAlgorithm": "CIP100:hashAlgorithm",
+    "body": {
+      "@id": "CIP100:body",
+      "@context": {
+        "references": {
+          "@id": "CIP100:references",
+          "@container": "@set",
+          "@context": {
+            "GovernanceMetadata": "CIP100:GovernanceMetadataReference",
+            "Other": "CIP100:OtherReference",
+            "label": "CIP100:reference-label",
+            "uri": "CIP100:reference-uri"
+          }
+        }
+      }
+    }
+  },
+  "body": {
+    "type": "NO",
+    "title": "Vote on the Proposed Future Roadmap: NO (With Hope for Iteration)",
+    "content": "Dear Intersect & Community,\n\nFirst, let me acknowledge the effort that's gone into crafting this proposed future roadmap. Aligning a global community around shared priorities is like herding cats, except the cats are all on Twitter, and half of them are yelling about memecoins. So, kudos for even attempting this.\n\nHowever, after careful consideration, I must vote NO on this info action. This is because I believe we need to address critical gaps in the governance process before locking in long-term priorities.\n\n1. DRep Compensation\nWhen I signed up to be a DRep, I thought it would be part-time volunteer work, a way to give back to the ecosystem I love. But this roadmap makes it clear that being a DRep is going to be more than that. A lot more. We're talking about evaluating hundreds (if not thousands) of proposals, getting into technical details, and making decisions that will shape Cardano's future for years to come. Expecting DReps to do this without compensation is like asking someone to run a marathon while carrying a fridge. Some of the Dreps might manage it for a while, but eventually, we're going to get tired. And when we do, who's left to govern? Only those who can afford to work for free. This then creates a privilege filter that excludes diverse voices and undermines the very decentralization we're trying to achieve.\n\nMy Ask: Address DRep compensation before finalizing the roadmap. Otherwise, we're just building a system where only the independently wealthy can afford to govern.\n\n2. Grassroots Projects: Meritocracy ≠ Monopoly\nThe roadmap will shape funding priorities for years to come, but without safeguards, it risks sidelining grassroots innovators in favor of established players. And as someone who started with 39 ADA, I know firsthand how hard it can be for smaller voices to be heard.\n\nMy Ask: Reserve a portion of future funding for grassroots projects, (e.g under $50k asks, and provide mentorship programs to level the playing field. Let's make sure the next great idea doesn't get lost because it came from someone without a PR team.\n\n3. The Snake Eating Its Own Tail\nThis proposed roadmap will guide budget decisions for years to come, but I don't see any clear rules to prevent conflicts of interest. Without them, we risk creating a closed loop where the same players fund the same projects.\n\nMy Ask: Implement conflict-of-interest rules before finalizing the roadmap. Ban DReps from voting on proposals they submit or require full transparency on conflicts.\n\n4. Building Bridges for Communities\nMy DRep campaign is built around the idea of building bridges and connecting communities that rarely talk, amplifying voices that have been told they're too small, too far, or too different to make a difference. But this roadmap doesn't do enough to address the barriers that keep so many communities from participating.\n\nI'm optimistic we can fix this. Let's collaborate, refine, and return with a roadmap and governance process that's not just decentralized in name, but in practice. When we do, you'll have my enthusiastic 'yes.' Until then, I vote NO, with hope, humility, and a stubborn belief that Cardano can do better.\n\nRespectfully,\nWepngong Maureen\nStakeLess DRep, Bridge Builder\nDrep ID: drep1maureenblack",
+    "date": "2025-03-16T16:08:29+01:00"
+  }
+}

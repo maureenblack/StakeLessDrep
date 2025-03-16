@@ -233,6 +233,31 @@ body {
     padding: 40px 0;
 }
 
+.stat-card {
+    text-align: center;
+    padding: 1.5rem;
+    background: #fff;
+    border-radius: 0.5rem;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.stat-card .btn-primary {
+    background-color: #0d6efd;
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 0.25rem;
+    text-decoration: none;
+    display: inline-block;
+    font-weight: 500;
+}
+
+.stat-card .text-danger {
+    color: #dc3545;
+    font-size: 1.25rem;
+    font-weight: bold;
+    margin-top: 0.5rem;
+}
+
 .statistic {
     padding: 20px;
     border: 1px solid #dee2e6;
@@ -642,6 +667,11 @@ body {
 
 .stat-card:hover {
     transform: translateY(-5px);
+}
+
+.stat-card .btn {
+    padding: 0.75rem 1.5rem;
+    font-weight: 500;
 }
 
 .vote-rationale {
@@ -1505,4 +1535,74 @@ footer h5 {
         align-items: center;
         justify-content: center;
     }
+}
+
+/* Vote styling */
+.ask-highlight {
+    background-color: #f8f9fa;
+    border-left: 4px solid #0d6efd;
+    padding: 1rem;
+    margin: 1.5rem 0;
+    font-weight: 500;
+}
+
+.signature {
+    margin-top: 2rem;
+    font-style: italic;
+    color: #666;
+}
+
+.vote-badge.vote-no {
+    background-color: #dc3545;
+    color: white;
+    padding: 0.25rem 0.75rem;
+    border-radius: 1rem;
+    font-size: 0.875rem;
+    font-weight: 500;
+}
+
+.vote-badge.vote-yes {
+    background-color: #198754;
+    color: white;
+    padding: 0.25rem 0.75rem;
+    border-radius: 1rem;
+    font-size: 0.875rem;
+    font-weight: 500;
+}
+
+.vote-date {
+    color: #6c757d;
+    margin-left: 1rem;
+    font-size: 0.875rem;
+}
+
+.rationale-content h3 {
+    color: #0d6efd;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+}
+
+.rationale-content p {
+    line-height: 1.6;
+    margin-bottom: 1rem;
+}
+
+.key-points-list {
+    list-style: none;
+    padding-left: 0;
+}
+
+.key-points-list li {
+    margin-bottom: 1rem;
+    display: flex;
+    align-items: flex-start;
+}
+
+.key-points-list i {
+    margin-right: 0.75rem;
+    margin-top: 0.25rem;
+}
+
+.key-points-list .text-warning {
+    color: #ffc107;
 }

@@ -2,6 +2,7 @@
 class VotingHistory {
     constructor() {
         this.votes = [];
+        this.sortVotes();
     }
 
     addVote(vote) {
@@ -10,6 +11,34 @@ class VotingHistory {
 
     getLatestVotes(count = 3) {
         return this.votes.slice(0, count);
+    }
+
+    sortVotes() {
+        const votes = Array.from(document.querySelectorAll('.card.mb-3'));
+        if (!votes.length) return;
+
+        // Sort votes by date, newest first
+        votes.sort((a, b) => {
+            const dateA = this.extractDate(a);
+            const dateB = this.extractDate(b);
+            return dateB - dateA;
+        });
+
+        // Get the container and stats section
+        const statsSection = document.querySelector('.row.mb-5');
+        if (!statsSection) return;
+
+        // Remove and reinsert votes in sorted order
+        votes.forEach(vote => {
+            vote.remove();
+            statsSection.insertAdjacentElement('afterend', vote);
+        });
+    }
+
+    extractDate(voteElement) {
+        const dateElement = voteElement.querySelector('.vote-date');
+        if (!dateElement) return new Date(0);
+        return new Date(dateElement.textContent);
     }
 }
 
@@ -113,18 +142,26 @@ document.addEventListener('DOMContentLoaded', () => {
     // Load blog posts if we're on the blog page
     loadBlogPosts();
 
-    // Add event listeners
-    document.addEventListener('submit', handleNewsletterSubmit);
-    
-    // Add search functionality if we're on the resources page
-    const searchInput = document.getElementById('resourceSearch');
-    if (searchInput) {
-        searchInput.addEventListener('input', handleResourceSearch);
+    // Initialize voting history if we're on the votes page
+    if (window.location.pathname.includes('votes.html')) {
+        new VotingHistory();
     }
 
-    // Add copy DRep ID functionality
-    const copyButton = document.querySelector('.cta-section button');
-    if (copyButton) {
-        copyButton.addEventListener('click', copyDrepId);
+    // Handle newsletter form submission
+    const newsletterForm = document.getElementById('newsletter-form');
+    if (newsletterForm) {
+        newsletterForm.addEventListener('submit', handleNewsletterSubmit);
+    }
+
+    // Handle resource search
+    const resourceSearchInput = document.getElementById('resource-search');
+    if (resourceSearchInput) {
+        resourceSearchInput.addEventListener('input', handleResourceSearch);
+    }
+
+    // Initialize copy DRep ID functionality
+    const copyDrepIdButton = document.getElementById('copy-drep-id');
+    if (copyDrepIdButton) {
+        copyDrepIdButton.addEventListener('click', copyDrepId);
     }
 });
